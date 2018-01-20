@@ -18,7 +18,10 @@ export class LoadPizzasFail implements Action {
 
 export class LoadPizzasSuccess implements Action {
   readonly type = LOAD_PIZZAS_SUCCESS;
-  constructor(payload: Pizza[]){};
+  public payload: Pizza[];
+  constructor(payload: Pizza[]){
+    this.payload = payload;
+  };
 }
 
 // action types
