@@ -13,15 +13,12 @@ export class LoadPizzas implements Action {
 
 export class LoadPizzasFail implements Action {
   readonly type = LOAD_PIZZAS_FAIL;
-  constructor(payload: any){};
+  constructor(public payload: any){};
 }
 
 export class LoadPizzasSuccess implements Action {
   readonly type = LOAD_PIZZAS_SUCCESS;
-  public payload: Pizza[];
-  constructor(payload: Pizza[]){
-    this.payload = payload;
-  };
+  constructor(public payload: Pizza[]){};
 }
 
 // action types

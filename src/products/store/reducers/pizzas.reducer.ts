@@ -1,6 +1,5 @@
 import * as fromPizzas from '../actions/pizzas.actions';
 import { Pizza } from '../../models/pizza.model';
-import { LOAD_PIZZAS_FAIL, LOAD_PIZZAS_SUCCESS } from '../actions/pizzas.actions';
 
 export interface PizzaState {
   data: Pizza[];
